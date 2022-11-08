@@ -6,6 +6,7 @@ One liners to convert C code to shellcode
 `$ git clone https://github.com/acheong08/shellcode_utils`
 ## Dependencies
 `$ cd shellcode_utils/linux`
+
 `$ ./requirements.sh`
 ## Running
 `$ ./get_shellcode.sh <C file> <arch>`
