@@ -1,7 +1,8 @@
 #!/bin/bash
-if [ $# -eq 1 ]
+if [ $# -eq 2 ]
 then
 	filename=$1
+	arch=$2
 	python3 ./c2shellcode.py -d $filename $filename.s
 	sed -i 's/#.*$//;/^$/d' $filename.s
 	pwn asm -c amd64 -f raw -i $filename.s -o $filename.bin
@@ -10,6 +11,6 @@ then
 	# Cleanup
 	rm $filename.*
 else
-	echo "Usage: ./get_shellcode.sh <C filename>"
+	echo "Usage: ./get_shellcode.sh <C filename> <Arch>"
 	exit
 fi
