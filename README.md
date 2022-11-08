@@ -13,6 +13,9 @@ One liners to convert C code to shellcode
 
 Arch: choose from '16', '32', '64', 'android', 'baremetal', 'cgc', 'freebsd', 'linux', 'windows', 'powerpc64', 'aarch64', 'powerpc', 'sparc64', 'mips64', 'msp430', 'alpha', 'amd64', 'riscv', 'sparc', 'thumb', 'cris', 'i386', 'ia64', 'm68k', 'mips', 's390', 'none', 'avr', 'arm', 'vax', 'little', 'big', 'be', 'eb', 'le', 'el'
 
+# Other notes
+[Using the shellcode](linux/README.md)
+
 # Credits
 https://github.com/ebubekirtrkr/c2shellcode - For converting C to assembly
 
